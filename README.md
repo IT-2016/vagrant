@@ -37,13 +37,17 @@ Pour installer depuis une box existante et à disposition.
 Copier coller le fichier VagrantFile à l'emplacement de votre projet. 
 
 Dans ce fichier VagrantFile modifier la ligne et cibler l'emplacement de votre fichier `.box` : 
+
 `config.vm.box = "devbox"`
+
 `config.vm.box_url = "[PATH]/devbox.box"`
 
 Configurer l'IP de réseaux privé de votre box
+
 `config.vm.network :private_network, ip: "192.168.33.10"`
 
 Configurer le dossier synchronisé entre votre machine physique et votre machine virtuel
+
 `config.vm.synced_folder "./", "/var/www/project"`
 
 ## 2. Installation initial
